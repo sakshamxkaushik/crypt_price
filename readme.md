@@ -1,7 +1,7 @@
 # Crypto Prices Web App
 
 
-![Crypto Prices Web App Screenshot](Screenshot.jpg)
+![Crypto Prices Web App Screenshot](https://github.com/sakshamxkaushik/crypt_price/blob/main/Screenshot.jpg)
 
 The Crypto Prices Web App is a simple web application that provides real-time cryptocurrency price information. It fetches data from the CoinGecko API and displays it in an easy-to-read format. This readme provides instructions on how to run the application and offers a brief overview of its features.
 
