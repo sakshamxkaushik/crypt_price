@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="dark bg-gray-900 text-white">
+<!-- Add the "dark" class to enable dark mode and set a dark background -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Crypto Prices Web App</title>
+</head>
+
+<body class="flex flex-col items-center">
+    <header class="sticky top-0 z-10 flex items-center justify-center w-full bg-white border-b h-14 dark:bg-gray-900 dark:text-white dark:border-gray-700">
+        <p>Updated on {{.LastUpdateTime}}</p>
+    </header>
+
+    <main class="flex flex-col w-full max-w-sm gap-3 py-4">
+        {{range .Cryptos}}
+        <div class="flex items-center justify-between pl-4 pr-4 border rounded-full h-14 bg-neutral-100 dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center gap-2">
+                <img src="{{.Image}}" class="w-7 h-7" />
+                <p>{{.Name}}</p>
+            </div>
+            <p>${{.Price}}</p>
+        </div>
+        {{end}}
+    </main>
+</body>
+
+</html>
